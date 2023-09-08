@@ -11,13 +11,13 @@ import { adicionarAoCarrinho } from "./menuCarrinho";
 export function renderizarCatalogo() {
   for (const produtoCatalogo of catalogo) {
     //eu peguei o 1 cartao do html criei uma cost e os dados en crase 
-    const cartaoProduto = `<div class="rounded-lg shadow-xl shadow-slate-400 bg-white flex flex-col w-64 m-2 p-2 group 
+    const cartaoProduto = `<div class="rounded-lg shadow-xl shadow-slate-400 bg-white flex flex-col w-52 m-2 p-3 group 
     ${produtoCatalogo.acesorios ?  'acesorios' : 'kitbebe'}"
      id="card-produto-${produtoCatalogo.id}">
            <img 
            src="./assets/img/${produtoCatalogo.imagem}"
            alt="Produto 1 rezina"
-           class="w-64 h-64 hover:scale-125 group-hover:scale-125 duration-300 my-7 rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)]" 
+           class=" h-48 hover:scale-125 group-hover:scale-125 duration-300 my-5 rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)]" 
            />
             <p class='text-sm'>${produtoCatalogo.marca}</p>
             <p class='text-sm'>${produtoCatalogo.nome}</p>

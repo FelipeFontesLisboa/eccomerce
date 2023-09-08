@@ -122,7 +122,7 @@ function desenharProdutoNoCarrinho(idProduto){
     <img
       src="./assets/img/${produto.imagem}"
       alt="Carrinho: ${produto.nome}"
-      class="h-24 w-39 rounded-lg"
+      class="h-20  rounded-lg"
      />      
       <div class="p-2  flex flex-col justify-between">
         <p class="text-slate-900 text-sm">
