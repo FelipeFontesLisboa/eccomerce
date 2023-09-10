@@ -29,7 +29,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b1.jpg",
       acesorios: false
    },
    {
@@ -37,7 +37,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b2.jpg",
       acesorios: false
    },
    {
@@ -45,7 +45,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b3.jpg",
       acesorios: false
    },
    {
@@ -53,7 +53,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b4.jpg",
       acesorios: false
    },
    {
@@ -61,7 +61,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b5.jpg",
       acesorios: false
    },
    {
@@ -69,7 +69,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Art Rezina A1",
       preco: 15,
-      imagem: "product-1.jpg",
+      imagem: "product-b2",
       acesorios: true
    
    },
@@ -135,7 +135,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b6.jpg",
       acesorios: false
    },
    {
@@ -191,7 +191,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
-      imagem: "product-9.jpg",
+      imagem: "product-b7.jpg",
       acesorios: false
    },
    {
@@ -199,7 +199,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
-      imagem: "product-9.jpg",
+      imagem: "product-b8.jpg",
       acesorios: false
    },
    {
@@ -207,7 +207,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
-      imagem: "product-9.jpg",
+      imagem: "product-b9.jpg",
       acesorios: false
    },
    {
@@ -215,7 +215,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
-      imagem: "product-9.jpg",
+      imagem: "product-b10.jpg",
       acesorios: false
    },
    {
@@ -223,7 +223,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
-      imagem: "product-9.jpg",
+      imagem: "product-b11.jpg",
       acesorios: false
    },
    {
@@ -231,7 +231,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b12.jpg",
       acesorios: false
    },
    {
@@ -239,7 +239,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b13.jpg",
       acesorios: false
    },
    {
@@ -247,7 +247,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b14.jpg",
       acesorios: false
    },
    {
@@ -255,7 +255,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b15.jpg",
       acesorios: false
 
    },
@@ -264,7 +264,7 @@ export const catalogo = [
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
-      imagem: "product-9.jpg",
+      imagem: "product-b16.jpg",
       acesorios: false
    },
 ];
