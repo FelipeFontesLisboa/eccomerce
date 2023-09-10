@@ -27,7 +27,7 @@ export const catalogo = [
    {
       id: '22', // 9 pasa ser o 8 onde inicia a contagem java
       marca: "NinaIcomerce",
-      nome: "Rezina I",
+      nome: "Bebe Infantil",
       preco: 15,
       imagem: "product-b1.jpg",
       acesorios: false
