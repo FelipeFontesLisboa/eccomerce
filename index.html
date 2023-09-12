@@ -1,114 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nina | Produtos e Acessorios</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo/Nina-X-ICON.jpeg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nina | Produtos Em Rezina</title>
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="shortcut icon" href="./assets/logo/Nina-X-ICON.jpeg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body class="bg-stone-300 flex flex-col">
+    <section
+      id="carrinho"
+      class="fixed top-0 right-[-360px] bg-orange-800 h-[90vh] w-[360px] text-slate-200 z-50 duration-300 border-l rounded-bl-lg p-5 flex flex-col justify-between"
+    >
+      <div id="cabecalho-carrinho" class="flex justify-between m-4">
+        <p>
+          <i class="fa-solid fa-cart-shopping select-none p-3" title="Boas Compras"></i>Meu Carrinho
+        </p>
+        <button id="fechar-carrinho">
+          <i class="fa-solid fa-circle-xmark" title="Fechar o Carrinho"></i>
+        </button>
+      </div>
+      <section
+        id="produtos-carrinho"
+        class="h-3/5 overflow-x-auto flex flex-col gap-2"
+      ></section>
+      <p
+        id="preco-total"
+        class="bg-slate-200 text-green-800 rounded-sm pl-5 font-bold select-none"
+      >
+        Total: $0
+      </p>
 
-<body class="bg-stone-300 flex flex-col">
-  <section id="carrinho" class="fixed top-0 right-[-360px] bg-orange-800 h-[90vh] w-[360px]
-       text-slate-200 z-50 duration-300 border-l rounded-bl-lg p-5 flex flex-col justify-between ">
-    <div id="cabecalho-carrinho" class="flex justify-between m-4">
-      <p><i class="fa-solid fa-cart-shopping select-none p-3"></i>Meu Carrinho</p>
-      <button id="fechar-carrinho">
-        <i class="fa-solid fa-circle-xmark" ></i>
+      <button
+        id="finalizar-compras"
+        class="bg-amber-100 text-slate-900 p-2 hover:text-amber-100 hover:bg-black duration-500 rounded-sm font-bold"
+      >
+        Finalizar Compras
       </button>
-    </div>
-    <section id="produtos-carrinho" class="h-3/5 overflow-x-auto flex flex-col gap-2"></section>
-    <p id="preco-total" class="bg-slate-200 text-green-800 rounded-sm pl-5 font-bold select-none">Total: $0</p>
-
-    <button id="finalizar-compras" class="bg-amber-100 text-slate-900 p-2 hover:text-amber-100  hover:bg-black duration-500 rounded-sm font-bold ">Finalizar Compras</button>
-  </section>
-  <header
-    class="flex  text-xl bg-orange-800 shadow-lg shadow-slate-400 shadow-xl py-4  px-8 justify-between  sticky top-0 z-10">
-
-    <a href="./">
-    <img
-     src="./assets/logo/Nina.png"
-      alt="Logo Do NinaIcomerce"
-       class="h-16"
-       >
+    </section>
+    <header
+      class="flex text-xl bg-orange-800 shadow-lg shadow-slate-400 shadow-xl py-4 px-8 justify-between sticky top-0 z-10"
+    >
+      <a href="./">
+        <img
+          src="./assets/logo/Nina.png"
+          alt="Logo Do NinaIcomerce"
+          class="h-16"
+          title="Inicio"
+        />
       </a>
 
-    <form class="flex items-center py-4 h-100">
-      <input class="form-control w-96 me-2 rounded" type="search" placeholder="Procure por produtos"
-        aria-label="Search">
-
-      <button class="btn btn-outline-success bg-amber-100 rounded" type="submit">
-        Buscar Produto
-      </button>
-
-    </form>
-
-    <div class="text-slate-200 flex gap-8 ">
-      <button id="abrir-carrinho">
-        <i class="fa-solid fa-bag-shopping"></i>
-      </button>
-      <a href="./pedidos.html" class="text-slate-200 flex gap-5 " >
-      <button><i class="fa-solid fa-user"></i></button>
-    </a>
-      <button class="select-none">Cadastrar - Entrar</button>
-    </div>
-  </header>
-  <main class="flex flex-col items-center">
-
-    <section id="filtros" class="p-10 flex">
-      <div class="px-5">
-        <input id="exibir-todos"
-        type="radio"
-        name="filtro"
-        class="peer hidden"
-        checked>
-        <label for="exibir-todos"
-          class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">
-          Todos</label>
-      </div>
-
-      <div class="px-5">
+      <form class="flex items-center py-4 h-100">
         <input
-         id="exibir-acesorios" 
-         type="radio" 
-         name="filtro" 
-         class="peer hidden">
-         
-        <label for="exibir-acesorios"
-          class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Acessorios e
-          Bijuterias</label>
+          class="form-control w-96 me-2 rounded"
+          type="search"
+          placeholder="Procure por produtos"
+          aria-label="Search"
+        />
+
+        <button
+          class="btn btn-outline-success bg-amber-100 rounded"
+          type="submit"
+        >
+          Buscar Produto
+        </button>
+      </form>
+
+      <div class="text-slate-200 flex gap-8">
+        <button id="abrir-carrinho">
+          <i class="fa-solid fa-bag-shopping" title="Minhas Compras"></i>
+        </button>
+        <a href="./pedidos.html" class="text-slate-200 flex gap-5">
+          <button><i class="fa-solid fa-user" title="Historico de Compras"></i></button>
+        </a>
+        <button  title="Login e Cadastro" class="select-none">Cadastrar - Entrar</button>
       </div>
+    </header>
+    <main class="flex flex-col items-center">
+      <section id="filtros" class="p-10 flex">
+        <div class="px-5">
+          <input
+            id="exibir-todos"
+            type="radio"
+            name="filtro"
+            class="peer hidden"
+            checked
+          />
+          <label
+            for="exibir-todos"
+            class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer"
+          >
+            Todos</label
+          >
+        </div>
 
-      <div class="px-5">
-        <input id="exibir-kitbebe"
-         type="radio"
-        name="filtro"
-         class="peer hidden">
-        <label for="exibir-kitbebe"
-          class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Kit Bebe e
-          infantil</label>
-      </div>
+        <div class="px-5">
+          <input
+            id="exibir-acesorios"
+            type="radio"
+            name="filtro"
+            class="peer hidden"
+          />
 
-      <div class="px-5">
-        <input
-         id="ADECIDIR-O-PRODUTO" 
-         type="radio" 
-         name="filtro" 
-         class="peer hidden">
-         
-        <label for="ADECIDIR-O-PRODUTO"
-          class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Adecidir  e
-          Escoler</label>
-      </div>
+          <label
+            for="exibir-acesorios"
+            class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer"
+            >Acessorios e Bijuterias</label
+          >
+        </div>
 
-    </section>
+        <div class="px-5">
+          <input
+            id="exibir-kitbebe"
+            type="radio"
+            name="filtro"
+            class="peer hidden"
+          />
+          <label
+            for="exibir-kitbebe"
+            class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer"
+            >Kit Bebe e infantil</label
+          >
+        </div>
 
-    <section id="container-produto" class="flex flex-wrap p-10 justify-center gap-10 select-none cursor-pointer">
-      <!-- <div id="card-produto-1">
+        <div class="px-5">
+          <input
+            id="ADECIDIR-O-PRODUTO"
+            type="radio"
+            name="filtro"
+            class="peer hidden"
+          />
+
+          <label
+            for="ADECIDIR-O-PRODUTO"
+            class="peer-checked:bg-amber-100 peer-checked:text-bleck peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer"
+            >Adecidir e Escoler</label
+          >
+        </div>
+      </section>
+
+      <section
+        id="container-produto"
+        class="flex flex-wrap p-10 justify-center gap-10 select-none cursor-pointer"
+      >
+        <!-- <div id="card-produto-1">
           <img src="./assets/img/product-1.jpg"
            alt="Produto 1 rezina" .
            style="height: 250px;"
@@ -118,11 +165,99 @@
            <p>$15</p>
            <button>adicionar</button>
         </div> -->
-    </section>
-  </main>
-  <!--Module estamos usando logica de cogio modulo um falando com outro-->
-  <script type="module" src="./main.js"></script>
-  <script src="https://kit.fontawesome.com/9bd1f640f8.js" crossorigin="anonymous"></script>
-</body>
+      </section>
+    </main>
 
+    <footer class="w-full bg-neutral-200 h-32 flex justify-center ">
+      <section class="copyright w-full md:w-auto " id="simple-footer">
+        <div class="container justify-items-center w-full ">
+          <ul class="links flex mt-6 w-full justify-center"> 
+            <li class=" mx-8 ">
+              <p title="Developer"><Developer>Felipe Fontes</Developer> © 2023  | Nina Eccomerce |</p>
+            </li>
+            <li>
+              <a
+                href="//"
+                class="copyright-link"
+                title="Termos de Uso"
+                target="_blank"
+                rel="noopener"
+                >| Termos de Uso |</a
+              >
+            </li>
+            <li class=" mx-8">
+              <a
+                href="//"
+                class="copyright-link"
+                title="Política de privacidade"
+                target="_blank"
+                rel="noopener"
+                >| Política de Privacidade |</a
+              >
+            </li>
+            <li class=" mx-8">
+              <a
+                href="//"
+                class="copyright-link"
+                title="Política de Devolução e Reembolso"
+                target="_blank"
+                rel="noopener"
+                >| Política de Devolução e Reembolso |</a
+              >
+            </li>
+
+            <ul class="extra links flex ">
+              <li class=" ml-24">
+                <a
+                  href="//"
+                  title="Fale com a gente"
+                  class="extra-information"
+                  target="_blank"
+                  rel="noopener"
+                  >Fale com a gente</a
+                >
+              </li>
+              <li class=" ml-8">
+                <a
+                  href="//"
+                  title="Baixe nosso aplicativo na Apple Store"
+                  class="extra-information app-store"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-apple fa-beat fa-xl" style="color: #aaa7a7;"></i> App Nina</a
+                >
+              </li>
+              <li class="ml-2">
+                <a
+                  href="//"
+                  title="Baixe nosso aplicativo na Play Store"
+                  class="extra-information google-play "
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-android fa-beat fa-xl" style="color: #2b9765;"></i>  App Nina</a
+                >
+              </li>
+            </ul>
+          </ul>
+
+              <hr class="border-1 border-[#243c5a] mt-6" >
+           
+          <div class="contact-details flex mx-8 mt-6 w-full mb-0 justify-center ">
+            <p>
+              Nina Serviços de Informática Ltda | CNPJ 01.000.000/0001-00 | Rua
+              Beira Rio, 00, Conj 11 - Vila Olímpia - Nova Londrina - PR - CEP:
+              8797-000
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!--Module estamos usando logica de cogio modulo um falando com outro-->
+    <script type="module" src="./main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9bd1f640f8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
