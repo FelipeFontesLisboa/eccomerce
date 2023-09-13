@@ -98,9 +98,7 @@ function desenharProdutoNoCarrinho(idProduto){
   const produto = catalogo.find((p) => p.id === idProduto);
   const containerProdutosCarrinho =
     document.getElementById("produtos-carrinho");
-
-  //agora vamos converter todo o texto do container pai porque o java entende como texto e nao como html  em  um elemento HTML para o java tratar ele de outra forma
-  const elementoArticle = document.createElement('article'); //<ARTICLE><ARTICLE> criamos ele com java e vamos pegas as class do antigo
+  const elementoArticle = document.createElement('article'); 
   const articleClasses = [
     "flex",
     "bg-amber-100",
@@ -108,11 +106,8 @@ function desenharProdutoNoCarrinho(idProduto){
     "p-1",
     "relative",
   ];
-  //ele vai percorrer toda a lista de classe , pega todo a lista e aplica na casse da vez articleclass
   for (const articleClass of articleClasses){
     elementoArticle.classList.add(articleClass);
-  //<article class="flex bg-amber-100 rounded-lg p-1 relative" > agora meu aticle tem todas as class que apliquei pro carrinho , 
-  // os demais itens clases qeu tavam dentro do article vai sem mantido en texto porque vamo chamar ele com innerHTML pra dentro de novo
   }
   const cartaoProdutoCarrinho = ` <button id="remover-item-${produto.id}" class=" absolute top-0 right-2">
       <i
@@ -136,26 +131,18 @@ function desenharProdutoNoCarrinho(idProduto){
           <p id="quantidade-${produto.id}" class="ml-2"> ${idsProdutoCarrinhoComQuantidade[produto.id]}</p>
           <button class="ml-2" id='incrementar-produto-${produto.id}'> + </button>
       </div> `;
-
       elementoArticle.innerHTML = cartaoProdutoCarrinho;
   containerProdutosCarrinho.appendChild (elementoArticle);
-
-  //capacidade do botao decrevemento de receber o comando  eventlist click,  e esperar a acao para executar a reacao de DIMINUIR os produtos do carinho
   document
     .getElementById(`decrementar-produto-${produto.id}`)
     .addEventListener('click', () => decrementarQuantidadeProduto(produto.id));
-
-  //capacidade do botao decrevemento de receber o comando  eventlist click,  e esperar a acao para executar a reacao de AUMENTAR os produtos do carinho
   document
     .getElementById(`incrementar-produto-${produto.id}`)
     .addEventListener('click', () => incrementarQuantidadeProduto(produto.id));
-
     document
     .getElementById(`remover-item-${produto.id}`)
     .addEventListener('click', () => removerDoCarrinho(produto.id));
 }
-
-
 export function redenrizarProdutosCarrinho(){
   const containerProdutosCarrinho =
   document.getElementById("produtos-carrinho");
@@ -167,31 +154,26 @@ export function redenrizarProdutosCarrinho(){
 }
 
 export function adicionarAoCarrinho(idProduto) {
-  //condicao if , se o produto ja estiver no carrio . e for clicado 
-  // adicione + 1
+  
   if (idProduto in idsProdutoCarrinhoComQuantidade) {
     incrementarQuantidadeProduto(idProduto);
     return;
   }
-  //adiocionar idetens no dicionario sem precisar fazer manualmente
   idsProdutoCarrinhoComQuantidade[idProduto] = 1;
-  salvarLocalStorage ("carrinho", idsProdutoCarrinhoComQuantidade);                //salvar local storag o dicionario inportando do utilitario 
+  salvarLocalStorage ("carrinho", idsProdutoCarrinhoComQuantidade);                
   desenharProdutoNoCarrinho(idProduto);
-  atualizarPrecoCarrinho();                                                      //atualizar preco carinho 
-
+  atualizarPrecoCarrinho();                                                     
 }
-// vai atualizar o preco total do carrinho
+
 export function atualizarPrecoCarrinho() {
   const precoCarrinho = document.getElementById("preco-total");
   let precoTotalCarrinho = 0;
-  //para cada laco de repeticao eu quero que o preco total do carrinho incrimenta adiciona soma 
   for(const idProdutoNoCarrinho in idsProdutoCarrinhoComQuantidade) {
     precoTotalCarrinho +=
     catalogo.find((p) => p.id === idProdutoNoCarrinho).preco * 
     idsProdutoCarrinhoComQuantidade[idProdutoNoCarrinho];
-
   }
-   // quando ele vai somar , quando aumenta crementa atualizar  a quantidade de produto ou diminuir atuali
+  
     precoCarrinho.innerText = `Total: $${precoTotalCarrinho}`;
 }
 

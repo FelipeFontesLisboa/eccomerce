@@ -1,31 +1,6 @@
-//vaiser constante     //caxinha↕ <> //casaco dentro da cazinha pegando e jogando dentro da caixinha
-//  const            nomeProduto  =   "Rezina M";
-//  const             marca       =    "NinaIcomerce";  EU USARIA DESSA FORMA SE FOSE POUCO PRODUTO
-//  const             preco       =     15;
-//  const        nomeArquivoImagem = "product-1.jpg";
-
-
-//constante carteira de intendidade com info do cartao no objetos , 
-//  const produto1 = { //UMA VARIAVEL SO PARA O PRODUTO GUARDANDO AS INFO COM OBJETO
-//   id: 1,
-//   nome: "Rezina M",
-//   marca: "NinaIcomerce",
-//   preco: 15,
-//   nomeArquivoImagem: "product-1.jpg",
-//  };
-//  const produto2 = { //UMA VARIAVEL SO PARA O PRODUTO GUARDANDO AS INFO COM OBJETO
-//   id:2,
-//   nome: "Rezina G",            //PASSAMOS AS INFORMACOES DESSA COST PARA A LISTA 
-//   marca: "NinaIcomerce",      
-//   preco: 18,
-//   nomeArquivoImagem: "product-2.jpg",
-//  };
-
-//variavel catalogo uma lista  DE VALORES ARRAY para guardar os produtos
-
 export const catalogo = [
    {
-      id: '22', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '22', 
       marca: "NinaIcomerce",
       nome: "Bebe Infantil",
       preco: 15,
@@ -33,7 +8,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '23', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '23', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -41,7 +16,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '24', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '24', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -49,7 +24,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '25', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '25', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -57,7 +32,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '26', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '26', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -65,7 +40,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '1', // 1 pasa ser o 0 onde inicia a contagem java
+      id: '1',
       marca: "NinaIcomerce",
       nome: "Art Rezina A1",
       preco: 15,
@@ -74,7 +49,7 @@ export const catalogo = [
    
    },
     { 
-      id: '2', // 2 pasa ser o 1 onde inicia a contagem java
+      id: '2', 
       marca: "NinaIcomerce",
       nome: "Rezina B",
       preco: 18,
@@ -82,7 +57,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '3', // 3 pasa ser o 2 onde inicia a contagem java
+      id: '3', 
       marca: "NinaIcomerce",
       nome: "Rezina C",
       preco: 19,
@@ -90,7 +65,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '4', // 4 pasa ser o 3 onde inicia a contagem java
+      id: '4',
       marca: "NinaIcomerce",
       nome: "Rezina D",
       preco: 17,
@@ -98,7 +73,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '5', // 5 pasa ser o 4 onde inicia a contagem java
+      id: '5', 
       marca: "NinaIcomerce",
       nome: "Rezina E",
       preco: 12,
@@ -106,7 +81,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '6', // 6 pasa ser o 5 onde inicia a contagem java
+      id: '6', 
       marca: "NinaIcomerce",
       nome: "Rezina F",
       preco: 10,
@@ -114,7 +89,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '7', // 7 pasa ser o 6 onde inicia a contagem java
+      id: '7', 
       marca: "NinaIcomerce",
       nome: "Rezina G",
       preco: 11,
@@ -122,16 +97,15 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '8', // 8 pasa ser o 7 onde inicia a contagem java
-      marca: "NinaIcomerce",                         //DEPOIS DE COLOCAR OS CARDE AGORA FALAMOS PARA O JAVA FAZER UM LOOP PRA PASAR E OLHA UM POR UM MANDANDO PRA PAGINA
+      id: '8', 
+      marca: "NinaIcomerce", 
       nome: "Rezina H",
-      // COM A ESTRUTURA MONTE O CARDE E COLOQUE NA PAGINA 
       preco: 14,
       imagem: "product-8.jpg",
       acesorios: true
    },
    {
-      id: '9', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '9', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -139,7 +113,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '10', // 10 pasa ser o 9 onde inicia a contagem java
+      id: '10', 
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
@@ -147,7 +121,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '11', // 11 pasa ser o 10 onde inicia a contagem java
+      id: '11', 
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
@@ -155,7 +129,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '12', // 12 pasa ser o 11 onde inicia a contagem java
+      id: '12', 
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
@@ -227,7 +201,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '21', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '21', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -235,7 +209,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '27', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '27', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -243,7 +217,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '28', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '28', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -251,7 +225,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '29', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '29', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -260,7 +234,7 @@ export const catalogo = [
 
    },
    {
-      id: '30', // 9 pasa ser o 8 onde inicia a contagem java
+      id: '30', 
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -269,18 +243,12 @@ export const catalogo = [
    },
 ];
 
-//funcao para salvar no localstore do navegador > vamos converter porque o navegador entende como object queremos text strig json vai converter stringify
-//JSON > Javascript object Notexion
 export function salvarLocalStorage(chave, informacao) {
    localStorage.setItem(chave, JSON.stringify(informacao));
 }
-
-//funcao ler do banco de dados localstorag FAZENDO OPOSTO STRING OBJETO
 export function lerLocalStorage(chave) {
    return JSON.parse(localStorage.getItem(chave,));
 }
-
-// para remover tambem do nosso banco temporario que he o local storage / ou seja limpara o  historico do carinho local 
 export function apagarDoLocalStorage(chave){
    localStorage.removeItem (chave)
 }
@@ -288,8 +256,6 @@ export function apagarDoLocalStorage(chave){
 //----------------------------------------------------------------------------
 
 
-
-// funcao apenas para gerar os cardes na sesao final de compra
 export function desenharProdutoCarrinhoSimples(
    idProduto,
    idContainerHtml,
