@@ -1,6 +1,6 @@
 export const catalogo = [
    {
-      id: '22', 
+      id: '22',
       marca: "NinaIcomerce",
       nome: "Bebe Infantil",
       preco: 15,
@@ -8,7 +8,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '23', 
+      id: '23',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -16,7 +16,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '24', 
+      id: '24',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -24,7 +24,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '25', 
+      id: '25',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -32,7 +32,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '26', 
+      id: '26',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -46,10 +46,10 @@ export const catalogo = [
       preco: 15,
       imagem: "product-b2",
       acesorios: true
-   
+
    },
-    { 
-      id: '2', 
+   {
+      id: '2',
       marca: "NinaIcomerce",
       nome: "Rezina B",
       preco: 18,
@@ -57,7 +57,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '3', 
+      id: '3',
       marca: "NinaIcomerce",
       nome: "Rezina C",
       preco: 19,
@@ -73,7 +73,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '5', 
+      id: '5',
       marca: "NinaIcomerce",
       nome: "Rezina E",
       preco: 12,
@@ -81,7 +81,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '6', 
+      id: '6',
       marca: "NinaIcomerce",
       nome: "Rezina F",
       preco: 10,
@@ -89,7 +89,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '7', 
+      id: '7',
       marca: "NinaIcomerce",
       nome: "Rezina G",
       preco: 11,
@@ -97,15 +97,15 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '8', 
-      marca: "NinaIcomerce", 
+      id: '8',
+      marca: "NinaIcomerce",
       nome: "Rezina H",
       preco: 14,
       imagem: "product-8.jpg",
       acesorios: true
    },
    {
-      id: '9', 
+      id: '9',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -113,7 +113,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '10', 
+      id: '10',
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
@@ -121,7 +121,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '11', 
+      id: '11',
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
@@ -129,7 +129,7 @@ export const catalogo = [
       acesorios: true
    },
    {
-      id: '12', 
+      id: '12',
       marca: "NinaIcomerce",
       nome: "Rezina J",
       preco: 20,
@@ -201,7 +201,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '21', 
+      id: '21',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -209,7 +209,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '27', 
+      id: '27',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -217,7 +217,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '28', 
+      id: '28',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -225,7 +225,7 @@ export const catalogo = [
       acesorios: false
    },
    {
-      id: '29', 
+      id: '29',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -234,7 +234,7 @@ export const catalogo = [
 
    },
    {
-      id: '30', 
+      id: '30',
       marca: "NinaIcomerce",
       nome: "Rezina I",
       preco: 15,
@@ -249,8 +249,8 @@ export function salvarLocalStorage(chave, informacao) {
 export function lerLocalStorage(chave) {
    return JSON.parse(localStorage.getItem(chave,));
 }
-export function apagarDoLocalStorage(chave){
-   localStorage.removeItem (chave)
+export function apagarDoLocalStorage(chave) {
+   localStorage.removeItem(chave)
 }
 
 //----------------------------------------------------------------------------
@@ -260,10 +260,10 @@ export function desenharProdutoCarrinhoSimples(
    idProduto,
    idContainerHtml,
    quantidadeProduto
- ) {
+) {
    const produto = catalogo.find((p) => p.id === idProduto);
    const containerProdutosCarrinho = document.getElementById(idContainerHtml);
- 
+
    const elementoArticle = document.createElement("article"); //<article></article>
    const articleClasses = [
       "flex",
@@ -273,12 +273,12 @@ export function desenharProdutoCarrinhoSimples(
       "relative",
       "mb-2"
    ];
- 
+
    for (const articleClass of articleClasses) {
-     elementoArticle.classList.add(articleClass);
+      elementoArticle.classList.add(articleClass);
    }
    //<article class="flex bg-slate-100 rounded-lg p-1 relative"></article>
- 
+
    const cartaoProdutoCarrinho = `
    <img
    src="./assets/img/${produto.imagem}"
@@ -296,8 +296,8 @@ export function desenharProdutoCarrinhoSimples(
          <p id='quantidade-${produto.id}' class='ml-2'>${quantidadeProduto}</p>
      </div>`;
    //<article class="flex bg-slate-100 rounded-lg p-1 relative">codigo do cartao do produto</article>
- 
+
    elementoArticle.innerHTML = cartaoProdutoCarrinho;
    containerProdutosCarrinho.appendChild(elementoArticle);
 
- }
+}

@@ -5,44 +5,44 @@ const catalogoProdutos = document.getElementById("container-produto");
 //funsao para exibir todos os itens novamente ao clicar
 function exibirTodos() {
     const produtosEscondidos = Array.from(
-         catalogoProdutos.getElementsByClassName("hidden")
-         );
+        catalogoProdutos.getElementsByClassName("hidden")
+    );
 
-    for(const produtos of produtosEscondidos){
+    for (const produtos of produtosEscondidos) {
         produtos.classList.remove("hidden");
     }
 }
-function esconderKitbebe(){
+function esconderKitbebe() {
     exibirTodos();
-   const produtosKitbebe =
-    Array.from(catalogoProdutos.getElementsByClassName("kitbebe")
-    );
-    for (const produtos of produtosKitbebe){
+    const produtosKitbebe =
+        Array.from(catalogoProdutos.getElementsByClassName("kitbebe")
+        );
+    for (const produtos of produtosKitbebe) {
         produtos.classList.add('hidden');
     }
 }
 
 //-------------------------------------------------------------------
-function esconderAcessorio(){
+function esconderAcessorio() {
     exibirTodos();
     const produtosAcessorio = Array.from(
         catalogoProdutos.getElementsByClassName("acesorios")
-     );
-     for (const produtos of produtosAcessorio){
-         produtos.classList.add('hidden');
-     }
- }
- 
- export function inicializarFiltros() {
-     document 
-     .getElementById('exibir-todos')
-     .addEventListener("click", exibirTodos);
+    );
+    for (const produtos of produtosAcessorio) {
+        produtos.classList.add('hidden');
+    }
+}
 
-     document 
-     .getElementById('exibir-kitbebe')
-     .addEventListener("click", esconderAcessorio);
+export function inicializarFiltros() {
+    document
+        .getElementById('exibir-todos')
+        .addEventListener("click", exibirTodos);
 
-     document 
-     .getElementById('exibir-acesorios')
-     .addEventListener("click", esconderKitbebe);
- }
+    document
+        .getElementById('exibir-kitbebe')
+        .addEventListener("click", esconderAcessorio);
+
+    document
+        .getElementById('exibir-acesorios')
+        .addEventListener("click", esconderKitbebe);
+}

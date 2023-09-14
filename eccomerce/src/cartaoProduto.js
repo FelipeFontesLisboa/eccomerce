@@ -4,7 +4,7 @@ import { adicionarAoCarrinho } from "./menuCarrinho";
 export function renderizarCatalogo() {
   for (const produtoCatalogo of catalogo) {
     const cartaoProduto = `<div class="rounded-lg shadow-xl shadow-slate-400 bg-white flex flex-col w-48 m-2 p-3 group 
-    ${produtoCatalogo.acesorios ?  'acesorios' : 'kitbebe'}"
+    ${produtoCatalogo.acesorios ? 'acesorios' : 'kitbebe'}"
      id="card-produto-${produtoCatalogo.id}">
            <img 
            src="./assets/img/${produtoCatalogo.imagem}"
