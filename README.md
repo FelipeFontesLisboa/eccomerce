@@ -2,6 +2,7 @@
 Projeto criado com | HTML. | CSS. | JavaScript. | TailWind. | Vite. | Node.JS |
  - Projeto eccomerce Plataforma de vendas online  Para qualquer produto.
  - Fiquem a Vontade Para explorar as funcionalidades.
+ - Carrinho De compra , pague chekout , historico de compras , acompanhamento de peditos.
  - Todas As etapas  page funcionais .
 
 - link
